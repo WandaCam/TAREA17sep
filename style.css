@@ -1,0 +1,62 @@
+.contenedor /*padre*/{
+    background-color: darkcyan;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 10fr 1fr;
+    grid-template-areas: "cabecera cabecera cabecera"
+                          "menu    menu    menu" 
+                          "contenido contenido publicidad"
+                          "pie    pie      pie" 
+                          ;
+}
+.contenedor>div{
+    background-color: rgb(204, 159, 235);
+}
+.contenedor .cabecera{
+    background-color: rgb(183, 217, 226);
+    grid-column: cabecera;
+}
+.contenedor .menu{
+    background-color: rgb(184, 183, 226);
+    grid-column: menu;
+}
+.contenedor .contenido{
+    background-color: rgb(226, 183, 226);
+    grid-column: contenido;
+   
+}
+.contenedor .contenido .c1{
+    background-color: cornflowerblue;
+    grid-column: c1;
+    padding: 40px;
+    margin: 10px;
+}
+.contenedor .contenido .c2{
+    background-color: rgb(171, 100, 237);
+    grid-column: c2;
+    padding: 40px;
+    margin: 10px;
+}
+.contenedor .publicidad{
+    background-color: rgb(226, 183, 185);
+    grid-column: publicidad;
+}
+.contenedor .publicidad .p1{
+    background-color: cornflowerblue;
+    padding: 40px 10px ;
+    margin: 10px;
+   
+}
+.contenedor .publicidad .p2{
+    background-color: rgb(171, 100, 237);
+    padding: 40px 10px ;
+    margin: 10px;
+}
+.contenedor .pie{
+    background-color: rgb(192, 226, 183);
+    grid-column: pie;
+}
